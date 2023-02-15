@@ -17,11 +17,12 @@ the Vm voltage drops further to 160V with a variation of 465V bringing PhaseSyn 
 
 power section
 
+![InverterTrifaseSTM32](https://user-images.githubusercontent.com/3807259/219058460-36eaac3e-e4f3-4cf9-baf5-f40c5136db98.png)
 
 
+control section
 
-
-
+![InverterTrifaseSTM32crtl](https://user-images.githubusercontent.com/3807259/219058824-473b6ee0-af78-4ac0-a2bb-68e440c9861a.png)
 
 
 
