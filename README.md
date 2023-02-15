@@ -9,12 +9,13 @@ I have indicated the vectors of the mains voltages with respect to the star poin
 on the Vist axis you can read the instantaneous values of the voltages from the orthogonal projections of the relative vectors, 
 in Fig.1 the case in which the power supply routine selects the phases at maximum voltage,
 
-[fig1sistemaTrifase.pdf](https://github.com/salvatore63/MatrixConverter/files/10744845/fig1sistemaTrifase.pdf)
+![fig1sistemaTrifase](https://user-images.githubusercontent.com/3807259/219085343-e16e212a-f09e-4063-8ae7-e4ac2e495b27.png)
 
 in this case the execution of the routine with respect to the synchronism signal is delayed by ( PhaseSyn ) 1.666 msec with respect to the zero 
 crossing of Vrs this means that at the generation routine of the rotating field the S and T phases will be signaled for the 3.3 msec 
 in which the maximum voltage is established between these two phases, the average value of the voltage in this period of time (Vm) 
 is approximately 500V with a difference between the minimum and maximum of about 72V , fig. 2 shows the case in which PhaseSyn = 3.3msec, 
+
 
 ![fig2sistemaTrifase](https://user-images.githubusercontent.com/3807259/219075648-b501b3f7-bb28-413a-8534-20c95d23aa95.png)
 
@@ -28,6 +29,8 @@ Within each phase, the switches from the rotating field routine are switched dep
 routine and the current phase in which the rotating field generation routine itself is located.
 
 ![fig4sistemaTrifase](https://user-images.githubusercontent.com/3807259/219077500-c84828cd-efd5-4a9c-bf5f-8bbd09609cad.png)
+
+[sistemaTrifase_fig1-2-3-4.pdf](https://github.com/salvatore63/MatrixConverter/files/10745052/sistemaTrifase_fig1-2-3-4.pdf)
 
 power section
 
