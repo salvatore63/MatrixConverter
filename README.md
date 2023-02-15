@@ -7,13 +7,27 @@ This routine simply has the task of signaling to the generation of the rotating 
 of phases to be used in the next 3.3 msec. In the first three figures contained in the dwg file 
 I have indicated the vectors of the mains voltages with respect to the star point and the concatenated ones, 
 on the Vist axis you can read the instantaneous values of the voltages from the orthogonal projections of the relative vectors, 
-in Fig.1 the case in which the power supply routine selects the phases at maximum voltage, 
+in Fig.1 the case in which the power supply routine selects the phases at maximum voltage,
+
+![fig1sistemaTrifase](https://user-images.githubusercontent.com/3807259/219075451-2fe0bfe3-d747-47d4-8890-55a3132cffbb.png)
+
 in this case the execution of the routine with respect to the synchronism signal is delayed by ( PhaseSyn ) 1.666 msec with respect to the zero 
 crossing of Vrs this means that at the generation routine of the rotating field the S and T phases will be signaled for the 3.3 msec 
 in which the maximum voltage is established between these two phases, the average value of the voltage in this period of time (Vm) 
 is approximately 500V with a difference between the minimum and maximum of about 72V , fig. 2 shows the case in which PhaseSyn = 3.3msec, 
+
+![fig2sistemaTrifase](https://user-images.githubusercontent.com/3807259/219075648-b501b3f7-bb28-413a-8534-20c95d23aa95.png)
+
 the average voltage drops to 380V and the difference between the minimum and maximum values rises to about 260V, 
 the Vm voltage drops further to 160V with a variation of 465V bringing PhaseSyn to 5msec as indicated in Fig.3
+
+![fig3sistemaTrifase](https://user-images.githubusercontent.com/3807259/219075816-d311b6eb-653e-44b1-89cb-983b0bfa5634.png)
+
+In Fig.4 the sequence used initially ( when I used the PWM technique for current control ) for the generation of the rotating field.
+Within each phase, the switches from the rotating field routine are switched depending on the pair of phases signaled by the power supply 
+routine and the current phase in which the rotating field generation routine itself is located.
+
+![fig4sistemaTrifase](https://user-images.githubusercontent.com/3807259/219077500-c84828cd-efd5-4a9c-bf5f-8bbd09609cad.png)
 
 power section
 
